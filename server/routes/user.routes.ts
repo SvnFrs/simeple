@@ -29,7 +29,7 @@ router.get("/id/:id", getUserById as RequestHandler);
 router.get("/name/:name", getUserByName as RequestHandler);
 
 router.post("/", createUser as RequestHandler);
-router.put("/id:id", updateUser as RequestHandler);
-router.delete("/id:id", deleteUser as RequestHandler);
+router.put("/id/:id", updateUser as RequestHandler);
+router.delete("/id/:id", deleteUser as RequestHandler);
 
 export default router;
